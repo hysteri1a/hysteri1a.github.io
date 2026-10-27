@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tianhao (Lawrence) Qian — research in reliable and efficient AI, LLM agents, model interventions, and sequential decision-making.">
+  <meta name="description" content="Tianhao (Lawrence) Qian — research in reliable and efficient AI, LLM agents, and sequential decision-making.">
   <meta name="author" content="Tianhao Qian">
   <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://hysteri1a.github.io/">
   <title>Tianhao (Lawrence) Qian · Research</title>
   <style>
     :root {
@@ -33,6 +34,10 @@
     section { padding-top:25px; margin-bottom:13px; }
     h2 { margin:0 0 15px; padding-bottom:9px; border-bottom:1px solid var(--line); font:normal 25px/1.25 Georgia,"Times New Roman",serif; letter-spacing:-.35px; color:#17212e; }
     p { margin:0 0 14px; }
+    .about-layout { display:grid; grid-template-columns:minmax(0,1fr) 186px; gap:28px; align-items:start; }
+    .about-copy { min-width:0; }
+    .portrait { margin:2px 0 0; }
+    .portrait img { display:block; width:100%; height:auto; border-radius:3px; }
     .interest { font-size:15px; color:var(--muted); }
     .pubs { list-style:none; padding:0; margin:0; counter-reset:pub; }
     .pubs li { position:relative; margin:0 0 18px; padding:0 0 0 28px; counter-increment:pub; }
@@ -65,6 +70,12 @@
       .item { grid-template-columns:1fr; }
       .item .date { text-align:left; padding:1px 0 2px; order:-1; }
       .pubs li { padding-left:25px; }
+      .about-layout { grid-template-columns:minmax(0,1fr) 132px; gap:17px; }
+      .portrait { margin-top:5px; }
+    }
+    @media (max-width:410px) {
+      .about-layout { grid-template-columns:1fr; }
+      .portrait { order:-1; width:150px; margin:0 0 5px; }
     }
     @media print {
       body { font-size:12px; }
@@ -102,9 +113,16 @@
     <main>
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">About</h2>
-        <p>I work on making AI systems more reliable and computationally efficient. My interests lie at the intersection of <strong>LLM agents and post-training, sequential decision-making, model intervention, and statistical learning</strong>.</p>
-        <p>I currently conduct research with <strong>Jiayu Chen</strong> at the University of Hong Kong on LLM-agent search and credit assignment, and with <strong>Lixu Wang</strong> at CUHK-Shenzhen on machine unlearning and weak-to-strong transfer. Previously, I studied Applied Mathematics (with a minor in Computer Science) at Southeast University and spent Fall 2025 as a visiting student at UC Berkeley.</p>
-        <p class="interest"><strong>Research interests:</strong> Reliable and efficient AI · LLM agents · RL and credit assignment · Statistical decision theory · Model intervention · Game theory</p>
+        <div class="about-layout">
+          <div class="about-copy">
+            <p>I work on making AI systems more reliable and computationally efficient. My interests lie at the intersection of <strong>LLM agents and post-training, sequential decision-making, and statistical learning</strong>.</p>
+            <p>I currently conduct research with <strong>Jiayu Chen</strong> at the University of Hong Kong on LLM-agent search and credit assignment, and with <strong>Lixu Wang</strong> at CUHK-Shenzhen on machine unlearning and weak-to-strong transfer. Previously, I studied Applied Mathematics (with a minor in Computer Science) at Southeast University and spent Fall 2025 as a visiting student at UC Berkeley.</p>
+            <p class="interest"><strong>Research interests:</strong> Reliable and efficient AI · LLM agents · RL and credit assignment · Statistical decision theory · Game theory</p>
+          </div>
+          <figure class="portrait">
+            <img src="assets/portrait.jpg" alt="Tianhao Qian with a pink plush toy" width="1080" height="1440" loading="eager" decoding="async">
+          </figure>
+        </div>
       </section>
 
       <section id="research" aria-labelledby="research-title">
