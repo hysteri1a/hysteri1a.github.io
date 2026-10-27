@@ -1,0 +1,15 @@
+极简学术主页 | GitHub Pages 发布方法
+
+1. 打开 https://github.com/new ，创建 Public（公开）仓库。
+2. 推荐仓库名：你的 GitHub 用户名.github.io （例如 github 用户名为 abc，则仓库名 abc.github.io）。
+3. 仓库中依次点击 Add file → Upload files，将本压缩包解压后的文件上传，确保 index.html 在仓库根目录，assets/Tianhao_Qian_CV.pdf 在 assets 文件夹内。
+4. 点击 Commit changes。
+5. 在仓库 Settings → Pages → Build and deployment → Source 选 Deploy from a branch。
+6. Branch 选 main，Folder 选 /(root)，点击 Save。
+7. 网站地址一般是 https://你的GitHub用户名.github.io/ 。
+
+如果你创建的是 academic-homepage 这样的普通仓库名，网址为：
+https://你的GitHub用户名.github.io/academic-homepage/
+
+说明：网站无需 Netlify、无需 npm 或构建，只有一个 HTML 文件和一份 CV PDF。
+已核实三篇主要论文 arXiv 链接：PAC-CF 2604.14345；RKU 2605.09008；Storage Is Not Strategy 2609.37858。请将 ZIP 解压后上传内容（不能直接上传 ZIP 作为网页）。

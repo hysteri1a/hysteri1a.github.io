@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tianhao (Lawrence) Qian — research in reliable and efficient AI, LLM agents, model interventions, and sequential decision-making.">
+  <meta name="author" content="Tianhao Qian">
+  <meta name="theme-color" content="#ffffff">
+  <title>Tianhao (Lawrence) Qian · Research</title>
+  <style>
+    :root {
+      --ink:#202631;
+      --muted:#5c6572;
+      --line:#dbe0e5;
+      --link:#255e94;
+      --subtle:#f6f8fa;
+    }
+    *, *::before, *::after { box-sizing:border-box; }
+    html { scroll-behavior:auto; scroll-padding-top:25px; }
+    body { margin:0; background:#fff; color:var(--ink); font:16px/1.72 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Noto Sans",sans-serif; -webkit-font-smoothing:antialiased; }
+    .container { width:min(100% - 56px, 810px); margin:0 auto; }
+    header { padding:65px 0 27px; border-bottom:1px solid var(--line); }
+    h1 { margin:0 0 7px; font:normal 42px/1.15 Georgia,"Times New Roman",serif; letter-spacing:-.9px; color:#17212e; }
+    .position { margin:0; font-size:16px; color:var(--muted); }
+    .identity { margin:14px 0 0; font-size:14px; color:var(--muted); }
+    a { color:var(--link); text-decoration:none; text-underline-offset:3px; }
+    a:hover, a:focus-visible { text-decoration:underline; }
+    a:focus-visible { outline:2px solid #1d5f9e; outline-offset:3px; }
+    .sep { color:#adb5be; padding:0 9px; }
+    nav { display:flex; gap:27px; flex-wrap:wrap; padding:17px 0 20px; font-size:14px; }
+    nav a { color:#344457; font-weight:500; }
+    main { padding:4px 0 60px; }
+    section { padding-top:25px; margin-bottom:13px; }
+    h2 { margin:0 0 15px; padding-bottom:9px; border-bottom:1px solid var(--line); font:normal 25px/1.25 Georgia,"Times New Roman",serif; letter-spacing:-.35px; color:#17212e; }
+    p { margin:0 0 14px; }
+    .interest { font-size:15px; color:var(--muted); }
+    .pubs { list-style:none; padding:0; margin:0; counter-reset:pub; }
+    .pubs li { position:relative; margin:0 0 18px; padding:0 0 0 28px; counter-increment:pub; }
+    .pubs li::before { content:counter(pub) "."; position:absolute; top:0; left:0; font-size:14px; color:#667483; }
+    .paper-title { font-weight:650; line-height:1.5; }
+    .authors { color:#485464; font-size:14px; line-height:1.55; margin-top:2px; }
+    .detail { margin-top:5px; color:#505c68; font-size:14px; line-height:1.65; }
+    .meta { font-size:13px; color:#647181; margin-top:4px; }
+    .tag { font-size:12px; border:1px solid #d6dce3; padding:1px 6px; color:#586575; border-radius:2px; white-space:nowrap; }
+    .project { margin-bottom:18px; }
+    .project h3, .item h3 { font-size:16px; font-weight:650; margin:0 0 2px; line-height:1.5; }
+    .project p { margin:0; color:#465160; font-size:15px; }
+    .item { display:grid; grid-template-columns:minmax(0,1fr) auto; column-gap:18px; margin:0 0 18px; }
+    .item .date { color:#647181; font-size:13px; padding-top:2px; white-space:nowrap; text-align:right; }
+    .item .role { color:#445161; font-size:14px; margin:0; }
+    .item .desc { font-size:14px; margin:4px 0 0; color:#5a6573; }
+    .dense { margin:0; padding-left:20px; }
+    .dense li { margin:0 0 7px; }
+    .small { font-size:14px; color:#5c6572; }
+    footer { padding:22px 0 55px; border-top:1px solid var(--line); color:#687481; font-size:13px; }
+    footer a { color:#526c85; }
+    @media (max-width:660px) {
+      .container { width:min(100% - 36px, 810px); }
+      header { padding:38px 0 20px; }
+      h1 { font-size:34px; }
+      .identity { line-height:2; }
+      .sep { padding:0 6px; }
+      nav { gap:10px 19px; font-size:13px; }
+      h2 { font-size:23px; }
+      .item { grid-template-columns:1fr; }
+      .item .date { text-align:left; padding:1px 0 2px; order:-1; }
+      .pubs li { padding-left:25px; }
+    }
+    @media print {
+      body { font-size:12px; }
+      .container { width:100%; max-width:none; }
+      header { padding-top:10px; }
+      nav { display:none; }
+      section { break-inside:avoid; }
+      a { color:#17212e; }
+      footer { padding-bottom:0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tianhao (Lawrence) Qian</h1>
+      <p class="position">Researcher in Reliable &amp; Efficient AI</p>
+      <p class="identity">Research Assistant, The University of Hong Kong &amp; CUHK-Shenzhen<br>
+      Incoming M.S. student in Electrical and Computer Engineering, Purdue University (Spring 2027)</p>
+      <p class="identity">
+        <a href="mailto:lawrence.qian1014@gmail.com">Email</a><span class="sep">/</span>
+        <a href="https://scholar.google.com/citations?user=R3mQT8gAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a><span class="sep">/</span>
+        <a href="https://www.linkedin.com/in/tianhao-qian-95866728a" target="_blank" rel="noopener noreferrer">LinkedIn</a><span class="sep">/</span>
+        <a href="assets/Tianhao_Qian_CV.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
+      </p>
+    </header>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#other">More</a>
+    </nav>
+    <main>
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>I work on making AI systems more reliable and computationally efficient. My interests lie at the intersection of <strong>LLM agents and post-training, sequential decision-making, model intervention, and statistical learning</strong>.</p>
+        <p>I currently conduct research with <strong>Jiayu Chen</strong> at the University of Hong Kong on LLM-agent search and credit assignment, and with <strong>Lixu Wang</strong> at CUHK-Shenzhen on machine unlearning and weak-to-strong transfer. Previously, I studied Applied Mathematics (with a minor in Computer Science) at Southeast University and spent Fall 2025 as a visiting student at UC Berkeley.</p>
+        <p class="interest"><strong>Research interests:</strong> Reliable and efficient AI · LLM agents · RL and credit assignment · Statistical decision theory · Model intervention · Game theory</p>
+      </section>
+
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Current Research</h2>
+        <div class="project"><h3>Decision-Guided Relative Temporal Credit &amp; Causal Repair (DG-RTC)</h3><p>Temporal credit assignment for multi-step agents, using decision-conditioned counterfactual evaluation and causal repair to improve post-training decisions.</p></div>
+        <div class="project"><h3>Cross-Model Functional Causal Support (CFCS)</h3><p>Transferring causal evidence across model scales to identify useful intervention locations in larger language models.</p></div>
+        <div class="project"><h3>OpenPAC: Certificate-Gated Learning for LLM Agents</h3><p>Using verifiable evidence and clean–adversarial training pairs to reduce learning from unverified or misleading feedback.</p></div>
+        <div class="project"><h3>From Deliberation to Instinct</h3><p>Learning state-dependent policies that decide when an agent should search, inspect, test, use tools, or stop under a compute budget.</p></div>
+      </section>
+
+      <section id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Selected Publications &amp; Manuscripts</h2>
+        <p class="small">Research manuscripts are clearly distinguished from accepted conference publications. The summaries below follow my October 2026 CV.</p>
+        <ol class="pubs">
+          <li><div class="paper-title"><a href="https://arxiv.org/abs/2604.14345" target="_blank" rel="noopener noreferrer">PAC-CF: Calibrating Irreversible Frontier Pruning in LLM-Guided Search</a></div>
+            <div class="authors"><strong>Tianhao Qian</strong>, Jiayu Chen, Z. Sun, Lixu Wang</div>
+            <div class="meta">2026 <span class="sep">·</span> <span class="tag">Manuscript under review</span> <span class="sep">·</span> <a href="https://arxiv.org/abs/2604.14345">arXiv</a></div>
+            <div class="detail">Calibrated pruning of LLM-guided search frontiers. In ToolTree at budget 100: +4.38 percentage points in full-test utility, with 18.95% fewer requests and 23.76% fewer tokens in the reported setting.</div>
+          </li>
+          <li><div class="paper-title"><a href="https://arxiv.org/abs/2605.09008" target="_blank" rel="noopener noreferrer">Relative Kinetic Utility: Calibrating Cross-Layer Credit for Global Structured LLM Pruning</a></div>
+            <div class="authors"><strong>Tianhao Qian</strong>, Guilin Qi, Jiayu Chen</div>
+            <div class="meta">2026 <span class="sep">·</span> <span class="tag">Manuscript under review</span> <span class="sep">·</span> <a href="https://arxiv.org/abs/2605.09008">arXiv</a></div>
+            <div class="detail">A label-free cross-layer channel importance score. At 40% sparsity on Qwen2.5-7B, +3.79 Mean3 points over GISP in the reported questions-only calibration experiment.</div>
+          </li>
+          <li><div class="paper-title"><a href="https://arxiv.org/abs/2609.37858" target="_blank" rel="noopener noreferrer">Storage Is Not Strategy: State-Conditioned Support Control for LLM Unlearning</a></div>
+            <div class="authors"><strong>Tianhao Qian</strong>, Ziming Hong, Chongyang Gao, Kezhen Chen, Lixu Wang</div>
+            <div class="meta">2026 <span class="sep">·</span> <span class="tag">Manuscript under review</span> <span class="sep">·</span> <a href="https://arxiv.org/abs/2609.37858">arXiv</a></div>
+            <div class="detail">Separates knowledge localization from useful intervention selection. A storage-localization signal reached AUROC 0.981 but agreed with the better intervention on only 17/36 targets.</div>
+          </li>
+          <li><div class="paper-title"><a href="https://arxiv.org/abs/2603.12354" target="_blank" rel="noopener noreferrer">Alternating Gradient Flow Utility: A Unified Metric for Structural Pruning and Dynamic Routing in Deep Networks</a></div>
+            <div class="authors"><strong>Tianhao Qian</strong>, Zhuoxuan Li, Jinde Cao, Xinli Shi, Leszek Rutkowski</div>
+            <div class="meta">Research 2025 <span class="sep">·</span> <span class="tag">Preprint 2026</span> <span class="sep">·</span> <a href="https://arxiv.org/abs/2603.12354">arXiv</a></div>
+            <div class="detail">Gradient-flow-based structural pruning and dynamic routing, including high-compression experiments on vision networks.</div>
+          </li>
+          <li><div class="paper-title"><a href="https://arxiv.org/abs/2603.07733" target="_blank" rel="noopener noreferrer">Large Language Model for Discrete Optimization Problems: Evaluation and Step-by-step Reasoning</a></div>
+            <div class="authors"><strong>Tianhao Qian</strong>, Guilin Qi, Z. Y. Wu, Ran Gu, Xuanyi Liu, Canchen Lyu</div>
+            <div class="meta">Research 2025 <span class="sep">·</span> <span class="tag">Preprint 2026</span> <span class="sep">·</span> <a href="https://arxiv.org/abs/2603.07733">arXiv</a></div>
+            <div class="detail">Evaluation of LLM performance on discrete optimization problems, including limits of chain-of-thought prompting.</div>
+          </li>
+          <li><div class="paper-title"><a href="https://arxiv.org/abs/2603.10512" target="_blank" rel="noopener noreferrer">Resource-constrained Amazons Chess Decision Framework Integrating Large Language Models and Graph Attention</a></div>
+            <div class="authors"><strong>Tianhao Qian</strong>, Zhuoxuan Li, Jinde Cao, Xinli Shi, Leszek Rutkowski</div>
+            <div class="meta">Research 2024 <span class="sep">·</span> <span class="tag">Preprint 2026</span> <span class="sep">·</span> <a href="https://arxiv.org/abs/2603.10512">arXiv</a></div>
+            <div class="detail">Resource-constrained Monte Carlo Tree Search with graph-based filtering of imperfect LLM-generated supervision; 66.5% win rate against GPT-4o-mini at a 50-node budget.</div>
+          </li>
+          <li><div class="paper-title"><a href="https://link.springer.com/book/10.1007/978-981-96-1809-5" target="_blank" rel="noopener noreferrer">Taxonomy Induction Using LLMs: An Enhanced Framework by Integrating Doubly-Checked Mechanism and Self-Evaluation Strategy</a></div>
+            <div class="authors">J. Li, Y. Meng, Lixu Wang, <strong>Tianhao Qian</strong>, S. Zhai, Guilin Qi</div>
+            <div class="meta">2024 <span class="sep">·</span> <span class="tag">Accepted, CCKS-IJCKG 2024</span> <span class="sep">·</span> <a href="https://link.springer.com/book/10.1007/978-981-96-1809-5">Proceedings</a></div>
+            <div class="detail">Iterative validation and self-evaluation for more reliable LLM-assisted taxonomy induction.</div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Research Experience</h2>
+        <div class="item"><div><h3>The University of Hong Kong</h3><p class="role">Research Assistant · Supervisor: Jiayu Chen</p><p class="desc">Reliable LLM-agent search, certified path pruning, and temporal credit assignment under limited computation.</p></div><div class="date">Sep 2026 – present</div></div>
+        <div class="item"><div><h3>The Chinese University of Hong Kong, Shenzhen</h3><p class="role">Research Assistant (remote) · Supervisor: Lixu Wang</p><p class="desc">Machine unlearning, intervention localization, and weak-to-strong transfer across model scales.</p></div><div class="date">May 2026 – present</div></div>
+      </section>
+
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="item"><div><h3>Purdue University</h3><p class="role">Incoming M.S. in Electrical and Computer Engineering</p></div><div class="date">Spring 2027</div></div>
+        <div class="item"><div><h3>Southeast University</h3><p class="role">B.S. in Applied Mathematics · Minor in Computer Science · Major GPA: 87.5/100</p><p class="desc">Selected coursework: Topology (100), Stochastic Processes (96), Machine Learning (96), Linear Algebra (92).</p></div><div class="date">June 2026</div></div>
+        <div class="item"><div><h3>University of California, Berkeley</h3><p class="role">Visiting Student, EECS / CDSS Research Track</p><p class="desc">Graduate coursework: Foundations of Decisions, Learning, and Games (A-); Natural Language Processing (A-).</p></div><div class="date">Fall 2025</div></div>
+      </section>
+
+      <section id="other" aria-labelledby="other-title">
+        <h2 id="other-title">Additional Information</h2>
+        <p><strong>Academic service.</strong> Invited Reviewer, <em>Journal of Artificial Intelligence Research</em> (2026); faculty-supervised review contributor, ICLR 2026.</p>
+        <p><strong>Industry experience.</strong> AI Engineering Intern, United Technology Computer Co., Ltd. (Feb–Jul 2025); NLP Intern, Gray Heron Intelligence (Mar–Jun 2024).</p>
+        <p><strong>Honors.</strong> Honorable Mention, MCM (2024); Provincial First Prize, Zhengda Cup (2024); SEU Strong Foundation Program Second-Class Scholarship (2024, 2025).</p>
+        <p><strong>Tools and methods.</strong> Python, PyTorch, Hugging Face, Linux, Git, LaTeX, RL credit assignment, MCTS, structured pruning, statistical decision theory, and machine unlearning.</p>
+      </section>
+    </main>
+    <footer>
+      <span>© 2026 Tianhao Qian</span><span class="sep">·</span><a href="mailto:lawrence.qian1014@gmail.com">Contact</a><span class="sep">·</span><a href="#">Back to top</a>
+    </footer>
+  </div>
+</body>
+</html>
